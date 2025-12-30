@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Reborn0 ARG</title>
+<title>Reborn0 </title>
 <style>
 body { margin: 0; height: 100vh; display: flex; justify-content: center; align-items: center; background-color: #000; overflow: hidden; font-family: 'Courier New', monospace; color: #0ff; cursor: none; }
 #image-container { position: relative; max-width: 90%; max-height: 90%; animation: flicker 2s infinite; transition: transform 0.1s ease; }
@@ -16,7 +16,7 @@ body { margin: 0; height: 100vh; display: flex; justify-content: center; align-i
 </head>
 <body>
 <div id="image-container">
-  <img src="assets/image.png" alt="Reborn0 Visual">
+  <img src="assets/Image.png" alt="Reborn0 Visual">
   <div class="glitch"></div>
 </div>
 <div id="hidden-text">I needed observers</div>
@@ -26,7 +26,7 @@ body { margin: 0; height: 100vh; display: flex; justify-content: center; align-i
 const audio = document.getElementById('reborn-audio');
 audio.volume = 0.4;
 audio.play().catch(() => { document.body.addEventListener('click', () => audio.play()); });
-const dust = document.getElementById('dust-whisper');
+const dust = document.getElementById('dust_whisper');
 dust.volume = 0.2;
 setInterval(() => { if (Math.random() < 0.05) { dust.currentTime = 0; dust.play(); } }, 2000);
 const hiddenText = document.getElementById('hidden-text');
